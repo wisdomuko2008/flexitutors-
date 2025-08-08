@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JAMB 2026 - Flexi Tutors</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --green:#4CAF50;
+    --dark:#333;
+  }
+  body{
+    margin:0; font-family:'Poppins',sans-serif; background:#f9f9f9; color:#333;
+  }
+  header{
+    background:var(--green); color:#fff; padding:1rem; text-align:center;
+  }
+  .hero{
+    text-align:center; padding:3rem 1rem;
+    background:linear-gradient(to bottom right, #4CAF50, #388E3C); color:#fff;
+  }
+  .hero h1{
+    font-size:2.5rem; margin:0; animation:fadeIn 3s ease-in-out infinite alternate;
+  }
+  @keyframes fadeIn{0%{opacity:.6}100%{opacity:1}}
+  .countdown{margin-top:2rem; font-size:1.5rem;}
+  .container{max-width:900px; margin:auto; padding:2rem;}
+  .section{
+    margin-bottom:2rem; background:#fff; border-radius:8px; padding:1.5rem;
+    box-shadow:0 2px 6px rgba(0,0,0,.05);
+  }
+  a.button, button.button{
+    display:inline-flex; align-items:center; gap:8px;
+    margin-top:1rem; padding:.75rem 1.5rem; background:var(--green);
+    color:#fff; text-decoration:none; border-radius:5px; border:0; cursor:pointer;
+    font-family:inherit; font-size:1rem;
+  }
+  .telegram-btn{background:#0088cc;}
+  .email-icon,.icon{vertical-align:middle; margin-right:8px;}
+  .whatsapp-button,.telegram-button,.bot-button{
+    position:fixed; right:20px; color:#fff; border-radius:50%; padding:12px;
+    text-align:center; font-size:24px; text-decoration:none; box-shadow:0 4px 6px rgba(0,0,0,.1);
+    z-index:999; display:flex; justify-content:center; align-items:center; overflow:hidden;
+    animation:pulse 2.2s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%{transform:scale(1)}
+    50%{transform:scale(1.08)}
+    100%{transform:scale(1)}
+  }
+  .whatsapp-button img,.telegram-button img{width:24px; height:24px;}
+  .whatsapp-button{bottom:20px; background:#25D366;}
+  .telegram-button{bottom:90px; background:#0088cc;}
+  footer{
+    text-align:center; padding:1rem; background:#333; color:#fff;
+  }
+  #tvScreen{
+    display:none; min-height:100vh; background:#ffffff; color:#333;
+  }
+  .tv-header{
+    background:var(--green); color:#fff; padding:1rem;
+    display:flex; justify-content:space-between; align-items:center;
+    position:sticky; top:0; z-index:5;
+  }
+  .tv-header h2{margin:0; font-size:1.1rem;}
+  .tv-back{
+    background:#dc3545; border:none; color:#fff; padding:.45rem .9rem; border-radius:4px; cursor:pointer;
+  }
+  .tv-body{
+    max-width:1100px; margin:1rem auto 3rem; padding:0 1rem 2rem; color:#333;
+  }
+  .tv-player{
+    position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:10px; background:#000;
+    box-shadow:0 4px 16px rgba(0,0,0,.12); margin-bottom:1.2rem;
+  }
+  .tv-player iframe{
+    position:absolute; inset:0; width:100%; height:100%; border:0;
+  }
+  .tv-grid{
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:.75rem;
+  }
+  .tv-card{
+    background:#fff; border:1px solid #eee; border-radius:8px; overflow:hidden; cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease; box-shadow:0 1px 3px rgba(0,0,0,.06);
+  }
+  .tv-card:active{transform:scale(.99);}
+  .tv-thumb{
+    width:100%; display:block; aspect-ratio:16/9; object-fit:cover; border-bottom:1px solid #eee;
+  }
+  .tv-meta{
+    padding:.55rem .7rem .8rem;
+  }
+  .tv-meta h4{
+    margin:0 0 2px; font-size:.9rem; font-weight:600; color:#222;
+  }
+  .tv-meta small{
+    color:#666; font-size:.78rem;
+  }
+</style>
+</head>
+<body>
+
+<!-- =================== HOME SCREEN =================== -->
+<main id="homeScreen">
+  <header>
+    <h2>Flexi Tutors - JAMB 2026 Preparation</h2>
+  </header>
+
+  <div class="hero">
+    <h1>Prepare for JAMB 2026 with Confidence</h1>
+    <div class="countdown" id="countdown">Loading countdown...</div>
+    <a class="button" href="simulator.html">Start CBT Simulator</a>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2>Result Checker</h2>
+      <p>Get your WAEC and NECO result checker here</p>
+      <a class="button" href="https://wisdomuko2008.github.io/Jambrunz/">Check Results</a>
+    </div>
+
+    <div class="section">
+      <h3>Testimonials</h3>
+      <p>"Flexi Tutors helped me pass my JAMB with flying colors! The CBT simulator is top-notch." – Ada E.</p>
+      <p>"I loved the study tips and mock tests. Highly recommended!" – Tunde A.</p>
+      <p>"The portal is very informative and easy to use. Thank you Flexi Tutors!" – Chika N.</p>
+    </div>
+
+    <div class="section">
+      <h2>FlexiTV Hub</h2>
+      <p>Watch FlexiTV to gain tips for your exam</p>
+      <a class="button" href="https://wisdomuko2008.github.io/Videopage/">Watch FlexiTV Hub</a>
+    </div>
+
+    <div class="section tv-launcher-section" style="text-align:center;">
+      <h3>Danger zone</h3>
+      <p>Please don't go in until we permit you</p>
+      <button class="button" id="openTvBtn" type="button">
+        Watch Flexi Tutors TV
+      </button>
+    </div>
+
+    <div class="section" id="about">
+      <h2>About JAMB 2026</h2>
+      <p>The Joint Admissions and Matriculation Board (JAMB) 2026 exam is the gateway to higher education in Nigeria. Stay informed on updates and deadlines here.</p>
+    </div>
+
+    <div class="section" id="requirements-register">
+      <h2>Requirements</h2>
+      <ul>
+        <li>Valid email and phone number</li>
+        <li>NIN (National Identification Number)</li>
+        <li>O'Level results (WAEC/NECO/NABTEB)</li>
+        <li>JAMB profile code</li>
+      </ul>
+      <h2>Register for JAMB</h2>
+      <p>Visit the nearest JAMB CBT center with your profile code and required documents.</p>
+      <a class="button" href="https://wa.me/2347051768946?text=Hi%20I%E2%80%99m%20interested%20in%20JAMB%202026%20preparation.%20Can%20you%20assist%20me?" target="_blank">Chat on WhatsApp</a>
+      <a class="button telegram-btn" href="https://t.me/2349034159839?text=Hi%20I%E2%80%99m%20interested%20in%20JAMB%202026%20preparation.%20Can%20you%20assist%20me?" target="_blank">Chat on Telegram</a>
+    </div>
+
+    <div class="section" id="download">
+      <h2>Mobile app</h2>
+      <p>Get our CBT app for Android. iOS version coming soon</p>
+      <a class="button" href="https://www.dropbox.com/scl/fi/p0c8tp8msz028pq2zgn0v/_Flexi_Tutors_18925230.apk?rlkey=ht8nppo3yvw9h4ut9mqp6e3lt&st=mjmwhsdd&dl=0">Download App</a>
+    </div>
+
+    <div class="section">
+      <h2>📚 Study Materials</h2>
+      <p>Download free eBooks, syllabuses, and past questions to guide your JAMB and WAEC Preparation</p>
+      <a class="button" href="https://t.me/+1y7-2wFzMX4wMmNk">Download Materials</a>
+    </div>
+
+    <div class="section">
+      <form><input type='text' placeholder='Enter PIN'><button>Load PIN</button></form>
+    </div>
+
+    <div class="section">
+      <h2>Chat with Jarvis AI</h2>
+      <p>Chat with Jarvis for more info</p>
+      <a class="button" href="https://wisdomuko2008.github.io/JAMBassist-/">Start Chatting</a>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>For customer service, email us at:</p>
+      <p>
+        <strong><a href="mailto:flexitutors2000@gmail.com">flexitutors2000@gmail.com</a></strong>
+      </p>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin: 2rem 0;">
+    <a href="https://chat.whatsapp.com/FkDs9GTcGVeDHcCTl6w3B9?mode=ac_t" style="background: #4CAF50; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold;" target="_blank">
+      Join Our Study Community
+    </a>
+  </div>
+
+  <footer>
+    <p>© 2026 Flexi Tutors. All rights reserved.</p>
+  </footer>
+</main>
+
+<!-- =================== TV SCREEN =================== -->
+<section id="tvScreen">
+  <div class="tv-header">
+    <h2>Flexi Tutors TV</h2>
+    <button class="tv-back" id="backHomeBtn">Back to Home</button>
+  </div>
+  <div class="tv-body">
+    <div class="tv-player">
+      <iframe id="tvPlayer" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="tv-grid" id="tvGrid"></div>
+  </div>
+</section>
+
+<!-- Floating Buttons -->
+<a class="whatsapp-button" href="https://wa.me/2349034159839?text=Hi%20I%E2%80%99m%20interested%20in%20JAMB%202026%20preparation.%20Can%20you%20assist%20me?" target="_blank" title="Chat with us on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<a class="telegram-button" href="https://t.me/2347051768946?text=Hi%20I%E2%80%99m%20interested%20in%20JAMB%202026%20preparation.%20Can%20you%20assist%20me?" target="_blank" title="Chat with us on Telegram">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+</a>
+
+<script>
+  // Countdown
+  const targetDate = new Date("2026-04-25T08:00:00").getTime();
+  function countdown(){
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+    if (diff <= 0) {
+      document.getElementById("countdown").innerHTML = "JAMB 2026 has started!";
+      return;
+    }
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+    document.getElementById("countdown").innerHTML =
+      `${days}d ${hours}h ${minutes}m ${seconds}s remaining`;
+  }
+  setInterval(countdown, 1000); countdown();
+
+  // TV logic
+  const videos = [
+    { id: "m3jXtd3-caA", title: "Exam Prep Video 1", description: "JAMB tips & strategy" }
+  ];
+
+  const homeScreen = document.getElementById('homeScreen');
+  const tvScreen   = document.getElementById('tvScreen');
+  const tvPlayer   = document.getElementById('tvPlayer');
+  const tvGrid     = document.getElementById('tvGrid');
+  const openTvBtn  = document.getElementById('openTvBtn');
+  const backHomeBtn= document.getElementById('backHomeBtn');
+
+  function showTV(){
+    homeScreen.style.display = 'none';
+    tvScreen.style.display   = 'block';
+    buildTvGrid();
+  }
+
+  function backHome(){
+    tvScreen.style.display   = 'none';
+    homeScreen.style.display = 'block';
+    tvPlayer.src = "";
+  }
+
+  function buildTvGrid(){
+    tvGrid.innerHTML = "";
+    videos.forEach((v, idx) => {
+      const thumb = `https://img.youtube.com/vi/${v.id}/hqdefault.jpg`;
+      const card = document.createElement('div');
+      card.className = 'tv-card';
+      card.innerHTML = `
+        <img class="tv-thumb" src="${thumb}" alt="${v.title}">
+        <div class="tv-meta">
+          <h4>${v.title}</h4>
+          <small>${v.description || ""}</small>
+        </div>
+      `;
+      card.addEventListener('click', () => playVideo(v.id));
+      tvGrid.appendChild(card);
+      if(idx === 0) playVideo(v.id, false);
+    });
+  }
+
+  function playVideo(videoId, autoplay = true){
+    const qp = autoplay ? '?autoplay=1&rel=0' : '?rel=0';
+    tvPlayer.src = `https://www.youtube.com/embed/${videoId}${qp}`;
+  }
+
+  openTvBtn.addEventListener('click', showTV);
+  backHomeBtn.addEventListener('click', backHome);
+</script>
+
+</body>
+</html>
